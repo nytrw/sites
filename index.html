@@ -5,24 +5,8 @@
   <title>Redirecting...</title>
   <script>
     // Get the path after "/sites/"
-    let fullPath = window.location.pathname; // e.g., "/sites/hello"
-    let baseUrl = "https://nytrw-api.onrender.com";
-
-    // Remove the leading "/sites" from path
-    let path = fullPath.startsWith("/sites") ? fullPath.slice(6) : fullPath;
-
-    // If root of /sites or empty, redirect to main base URL
-    let targetUrl;
-    if (path === "" || path === "/") {
-      targetUrl = baseUrl;
-    } else {
-      // Add .html if it doesn't already have an extension
-      if (!path.includes(".")) path += ".html";
-      targetUrl = baseUrl + "/sites" + path;
-    }
-
-    // Redirect immediately
-    window.location.href = targetUrl;
+    let baseUrl = "https://nytrw-api.onrender.com/"
+    window.location.href = baseUrl;
   </script>
 
   <!-- Fallback for very old browsers -->

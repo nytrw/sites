@@ -3,20 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
-  <script>
-    // Get the path after "/sites/"
-    let baseUrl = "https://nytrw-api.onrender.com/"
-    window.location.href = baseUrl;
-  </script>
-
-  <!-- Fallback for very old browsers -->
   <meta http-equiv="refresh" content="0; url=https://nytrw-api.onrender.com">
 </head>
 <body>
   <p>Redirecting to <a id="link" href="https://nytrw-api.onrender.com">https://nytrw-api.onrender.com</a>...</p>
   <script>
-    document.getElementById("link").href = targetUrl;
-    document.getElementById("link").textContent = targetUrl;
+    let baseUrl = "https://nytrw-api.onrender.com/"
+    window.location.href = baseUrl;
   </script>
 </body>
 </html>
